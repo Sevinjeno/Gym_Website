@@ -1,0 +1,55 @@
+.Exercise_Main{
+    display: flex;
+    justify-content:center;
+     flex-wrap: wrap;
+}
+.card{
+    background-color: rgb(242, 244, 244);
+    width:30rem;
+    height: 28rem;
+    margin:1rem;
+    border-radius:15px;
+    color: white;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+#p1{
+    margin-top: 2%;
+    font-size: 4rem;
+}
+#p2{
+    font-size: 2.2rem;
+    margin-left:3%;
+}
+#p3{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+.cardImage{
+    background-color: rgb(8, 8, 8);
+    background-size: contain;
+}
+
+.cardImage img{
+    /* height:100%; */
+    height:20rem;
+    max-width: 100%;
+}
+
+.cardImage h2{
+    text-align: center;
+}
+.cardImage p{
+    text-align: center;
+}
+

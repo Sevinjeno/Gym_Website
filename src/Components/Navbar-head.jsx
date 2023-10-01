@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
 import './Navbar-head.css'
+import {Link} from "react-scroll"
+
 
 const NavbarHead = () => {
 
@@ -9,14 +11,9 @@ const NavbarHead = () => {
        navref.current.classList.toggle("active")
   }
 
-
-
-
-
-
   return (
     <>
-    <div className="NavHead">
+    <div className="NavHead" id="home">
       <div className="brand-title">
         D Fitness
       </div>
@@ -29,10 +26,10 @@ const NavbarHead = () => {
 
       <div ref={navref} className="navbar-links">
             <ul>
-                <li>Home</li>
-                <li>Exercises</li>
-                <li>Services</li>
-                <li>Contact</li>
+                <li><Link to="home" spy="true" smooth={true} offset={50} duration={500}>Home</Link></li>
+                <li><Link to="Exercises" spy="true" smooth={true} offset={50} duration={500}>Exercises</Link></li>
+                <li >Services</li>
+                <li><Link to="Contact" spy="true" smooth={true} offset={50} duration={500}>Contact</Link></li>
                  
             </ul>
       </div>
