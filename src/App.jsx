@@ -1,4 +1,6 @@
 import './App.css'
+import Contact_Gym from './Components/Contact_Gym'
+import Exercise from './Components/Exercise'
 import NavbarHead from './Components/Navbar-head'
 import VideoPlay from './Components/VideoPlay'
 function App() {
@@ -11,8 +13,10 @@ function App() {
 
   return (
     <>
-      <NavbarHead />
-      <VideoPlay />
+      <NavbarHead/>
+      <VideoPlay />   
+      <Exercise />
+      <Contact_Gym />
     </>
   )
 }
