@@ -62,7 +62,7 @@ const Exercise = () => {
            </div>
          </div>
     </div>
-    <div id="p3">Join us, and let's conquer new heights together</div>
+    <div id="p3">For more in-depth information about our gym's exercise programs and state-of-the-art facilities, please don't hesitate to get in touch with us </div>
 
 </div>
       

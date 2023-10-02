@@ -5,20 +5,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-
-.brand-title{
-    color: white;
-    font-size: 3rem;
-    padding: 1rem;
-}
-
-
-.navbar-links{
     position: sticky;
     top: 0;
-    height:10rem
+    z-index: 100;
+}
+
+.navbar-links{
 }
 .navbar-links ul{
     display: flex;
@@ -27,7 +19,7 @@
     
 }
 .navbar-links li{
-    color: white;
+    color: white!important;
     list-style: none;
     padding: 1rem;
     margin-right: 2rem;
@@ -36,15 +28,18 @@
 
 .navbar-links li:hover{
     background-color: rgb(248, 251, 251);
-    color: black;
+    color: black !important;
     border-radius: 5px;
     cursor: pointer;
 }
 
+.disabled{
+    opacity: 0.5;
+}
 
 .__togglebutton{
     position: absolute;
-    top: 3.1rem;
+    top: 1.1rem;
     left: 0.5rem;
     display: none;
     flex-direction: column;
@@ -64,31 +59,54 @@
     cursor: pointer;
 }
 
+.navbar-links span{
+    color: white;
+    top: 25%;
+    position: absolute;
+    font-size: 2rem;
+    left: 2%;
+    }
 
 
 
 /* toggle bar responsive */
 
 @media (max-width:500px){
+
     .__togglebutton{
         display: flex;
     }
     .navbar-links{
-        display: none;
+        /* display: none; */
         width: 100%;
+        font-size: 0.5rem;
+        height: 4rem;
+        padding-top: 0.5rem;
     } 
-    .navbar-links ul{
-        flex-direction: column;
-        width: 100%;
+    .navbar-links ul {
+        /* flex-direction: column; */
+        /* width: 100%; */
         margin: 0;
         padding: 0;
         justify-content: center;
         align-items: center;
+        margin-left: 22%;
     }
-    .navbar-links li{
-        width: 100%;
-        margin: 0.2rem;
-        text-align: center;
+    .navbar-links span{
+    color: white;
+    top: 31%;
+    position: absolute;
+    font-size:1rem;
+    left: 2%;
+    }
+    
+    .navbar-links li {
+        /* font-size: 0.5rem; */
+        /* width: 100%; */
+        margin: 0;
+        /* text-align: center; */
+        font-size: 0.6rem;
+        max-width: 38%;
     }
     .navbar-links.active{
         display: flex;

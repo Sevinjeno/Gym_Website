@@ -13,6 +13,7 @@ function App() {
 
   return (
     <>
+    <span id="home"></span>
       <NavbarHead/>
       <VideoPlay />   
       <Exercise />
