@@ -7,29 +7,29 @@ const NavbarHead = () => {
 
    let navref=useRef(0);
 
-  let ToggleBar=()=>{
-       navref.current.classList.toggle("active")
-  }
+  // let ToggleBar=()=>{
+  //      navref.current.classList.toggle("active")
+  // }
 
   return (
     <>
-    <div className="NavHead" id="home">
-      <div className="brand-title">
-        D Fitness
-      </div>
+    <div className="NavHead" >
   
-      <div className="__togglebutton" onClick={ToggleBar}>
+      {/* <div className="__togglebutton" onClick={ToggleBar}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
-      </div>
+      </div> */}
 
       <div ref={navref} className="navbar-links">
+       
+      <span>D Fitness</span>
             <ul>
-                <li><Link to="home" spy="true" smooth={true} offset={50} duration={500}>Home</Link></li>
-                <li><Link to="Exercises" spy="true" smooth={true} offset={50} duration={500}>Exercises</Link></li>
-                <li >Services</li>
-                <li><Link to="Contact" spy="true" smooth={true} offset={50} duration={500}>Contact</Link></li>
+               
+                <li><Link to="home"  smooth={true} offset={50} duration={500}>Home</Link></li>
+                <li><Link to="Exercises" smooth={true} offset={50} duration={500} >Exercises</Link></li>
+                <li className='disabled'>Services</li>
+                <li><Link to="Contact" smooth={true} offset={50} duration={500}>Contact</Link></li>
                  
             </ul>
       </div>
