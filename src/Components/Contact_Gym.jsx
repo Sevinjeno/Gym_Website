@@ -9,7 +9,7 @@ const Contact_Gym = () => {
     <div className='Contact' id="Contact">
       <h1>Contact Us</h1>
         <div className="firstphase">
-            <span style={{fontSize:"1.9rem"}}>Address : </span>D Fitness Ambernath Loknagri, Play on Turf Near Hp Petrol Pump, Ambernath East
+            <span>Address : </span>D Fitness Ambernath Loknagri, Play on Turf Near Hp Petrol Pump, Ambernath East
         </div>
         <div className="secondphase">
             <p>Mail Us : <a href="mailto:info@dfitnessambernath.com">info@dfitnessambernath.com</a></p>
