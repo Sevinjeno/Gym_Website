@@ -17,7 +17,7 @@ const Exercise = () => {
          <div className="card">
            <div className="cardImage">
            <img src={squat} />
-            <h2>Squat Rock</h2>
+            <h2>Squat Rack</h2>
             <p> Strengthens your core,Reduces the risk of injury,Crushes calories,Boosts athletic ability and strength.</p>
            </div>
          </div>

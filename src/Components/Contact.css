@@ -20,7 +20,9 @@
     top: 0;
 }
 
-
+a {
+    text-decoration: none;
+  }
 
 .firstphase{
     margin-top:10%;

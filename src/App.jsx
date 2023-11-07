@@ -3,6 +3,7 @@ import Contact_Gym from './Components/Contact_Gym'
 import Exercise from './Components/Exercise'
 import NavbarHead from './Components/Navbar-head'
 import VideoPlay from './Components/VideoPlay'
+import Registration from './Components/Registration'
 function App() {
 
 //navbar
@@ -18,6 +19,8 @@ function App() {
       <VideoPlay />   
       <Exercise />
       <Contact_Gym />
+
+      {/* <Registration /> */}
     </>
   )
 }
